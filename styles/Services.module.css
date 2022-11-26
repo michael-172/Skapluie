@@ -1,0 +1,25 @@
+.Services {
+  margin-bottom: 100px;
+}
+
+.ImageHolder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.About__Heading {
+  color: #666666;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+.About__Span {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
