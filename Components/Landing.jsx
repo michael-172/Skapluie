@@ -13,7 +13,6 @@ const Landing = () => {
         console.log(isSmallScreen);
       } else {
         setSmallScreen(window.innerWidth);
-        console.log(isSmallScreen);
       }
     };
   });

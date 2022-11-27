@@ -26,3 +26,163 @@ a {
     background: black;
   }
 }
+
+.react-multi-carousel-item {
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  align-items: center;
+  display: flex;
+  /* width: fit-content !important; */
+}
+
+.react-multi-carousel-list {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  height: 355px;
+}
+
+.react-multi-carousel-dot button {
+  background: #aaaaaa94;
+  border: none;
+  outline: none;
+  border-color: transparent !important;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.react-multi-carousel-dot--active button {
+  background: #15addd !important;
+}
+
+/* @media (max-width: 367px) {
+  .react-multi-carousel-track {
+    gap: 33px;
+  }
+} */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: calc((100% - 30px) / 2) !important;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.container-with-dots {
+  height: 636px;
+  align-items: flex-start !important;
+  margin: 40px 0px;
+}
+.container-with-dots ul {
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+}
+
+.container-with-dots ul li {
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 50%);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 6 / 2;
+}
+.div2 {
+  grid-area: 1 / 2 / 2 / 4;
+}
+.div3 {
+  grid-area: 1 / 4 / 2 / 5;
+}
+.div4 {
+  grid-area: 1 / 5 / 2 / 6;
+}
+.div5 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.div6 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+.div7 {
+  grid-area: 2 / 4 / 3 / 6;
+}
+
+.slide.parent div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide.parent div img {
+  max-width: 100%;
+}
+
+.container-with-dots .react-multi-carousel-dot-list {
+  position: absolute;
+  width: fit-content;
+  align-items: center;
+  align-self: center;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0px;
+  z-index: 55555;
+  height: fit-content;
+}
+
+.Work_Header {
+  color: #666666;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+.test {
+  overflow: hidden;
+}
+.react-multi-carousel-list {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  height: fit-content;
+  margin-bottom: 45px;
+  padding: 25px 0px;
+}

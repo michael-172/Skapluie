@@ -1,0 +1,43 @@
+.Work {
+  min-height: calc(100vh - 500px);
+}
+
+.TabsWrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: scroll;
+}
+.TabsWrapper::-webkit-scrollbar {
+  width: 0px;
+}
+
+.TabsWrapper li {
+  background-color: transparent !important;
+  border: transparent !important;
+}
+.TabsWrapper li button {
+  background-color: transparent !important;
+  border: transparent !important;
+  color: #666666 !important;
+}
+
+.ImagesWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  @media (max-width: 476px) {
+    row-gap: 20px;
+  }
+}
+
+.image {
+  height: 290px;
+  //   padding: 20px;
+}
+
+.image img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
