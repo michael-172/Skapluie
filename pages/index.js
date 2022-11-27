@@ -6,7 +6,6 @@ import Landing from "../Components/Landing";
 import Work from "../Components/Work";
 import Services from "../Components/Services";
 import styles from "../styles/Home.module.css";
-import Footer from "../Components/Footer";
 
 export default function Home() {
   return (

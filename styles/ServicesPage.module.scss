@@ -1,0 +1,102 @@
+.Services {
+  min-height: calc(100vh - 500px);
+  margin-top: 10px;
+}
+
+.Header {
+  color: #666666;
+  font-weight: 700;
+  text-align: center;
+  margin: 40px 0px 60px 0px;
+}
+.Services_Text {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.Services_Image {
+  display: flex;
+  justify-content: center;
+}
+
+.Breadcrumb {
+  color: #adabab;
+}
+
+.Service_Name {
+  color: #15addd;
+  font-weight: 500;
+  font-size: 37px;
+  font-family: "Roboto";
+  margin-top: 8px;
+  letter-spacing: 4px;
+}
+
+.ServiceDesc {
+  color: #666666d1;
+  letter-spacing: 1px;
+  word-spacing: 10px;
+  width: 75%;
+  font-weight: 500;
+}
+
+.someClients {
+  color: #15addd;
+  margin: 10px 0px;
+  font-weight: 500;
+}
+
+.Partners {
+  width: fit-content;
+}
+.Partners div img {
+  object-fit: contain;
+  width: 54px;
+  cursor: pointer;
+}
+
+.Button_Container {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-left: 3px solid #15addd;
+  padding-left: 25px;
+  margin-top: 40px;
+}
+
+.Text_Button {
+  width: fit-content;
+  border: 2px solid #15addd;
+  color: #666666;
+  padding: 6px 35px;
+  border-radius: 26px;
+  background: transparent;
+  font-weight: 600;
+  position: relative;
+  transition: 0.3s;
+  background-image: none;
+}
+
+.Text_Button:hover {
+  background-color: #15addd;
+  color: #fff;
+  border-color: transparent;
+}
+
+.Services__Bottom {
+  height: 400px;
+  margin-top: 50px;
+}
+
+.Servces_Slider_Header {
+  color: #15addd;
+  font-size: 25px;
+}
+
+.Services__Bottom .react-multiple-carousel__arrow--left {
+  left: calc(4% + 1px);
+  top: 50%;
+  transform: translateY(-50%);
+}
