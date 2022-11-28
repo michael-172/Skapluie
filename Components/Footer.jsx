@@ -8,11 +8,7 @@ const Footer = () => {
     <footer className={styles.Footer}>
       <Container className={styles.Footer_container}>
         <Row className={styles.Footer_Row}>
-          <Col
-            className={` ${styles.column} first`}
-            md={4}
-            style={{ gap: "45px" }}
-          >
+          <Col className={` ${styles.column} first`} md={4}>
             <Image
               src={"/Clients/Clients-Background.png"}
               width={378}
@@ -25,8 +21,9 @@ const Footer = () => {
               width={139}
               height={71}
               alt={"footer logo"}
+              className={styles.FooterLogo}
             />
-            <span>
+            <span className={styles.firstSpan}>
               Skapluie Marketing Solutions <br /> For Businesses.
             </span>
             <span>
@@ -43,9 +40,9 @@ const Footer = () => {
               <li>Contact Us</li>
             </ul>
           </Col>
-          <Col className={styles.column} md={4}>
+          <Col className={`${styles.column} ${styles.thirdColumn}`} md={4}>
             <span>Call Us Today</span>
-            <h1>+ 22 3545 4353</h1>
+            <h1 className={styles.PhoneNumber}>+ 22 3545 4353</h1>
             <Row style={{ width: "fit-content" }}>
               <Col className="justify-content-center d-flex">
                 <Image

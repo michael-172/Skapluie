@@ -6,7 +6,6 @@ import Landing from "../Components/Landing";
 import Work from "../Components/Work";
 import Services from "../Components/Services";
 import styles from "../styles/Home.module.css";
-import BeforeAbout from "../Components/BeforeAbout";
 
 export default function Home() {
   return (
@@ -18,7 +17,6 @@ export default function Home() {
       </Head>
 
       <Landing />
-      <BeforeAbout />
       <About />
       <Services />
       <Clients />

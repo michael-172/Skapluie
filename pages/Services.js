@@ -11,7 +11,7 @@ const Services = () => {
       <Container>
         <h2 className={styles.Header}>Services</h2>
         <Row className={styles.Services__Top}>
-          <Col sm={6} className={styles.Services_Text}>
+          <Col sm={12} md={6} className={styles.Services_Text}>
             <span className={styles.Breadcrumb}>Home {">"} Services</span>
             <h2 className={styles.Service_Name}>PhotoSession</h2>
             <p className={styles.ServiceDesc}>
@@ -63,7 +63,7 @@ const Services = () => {
               <button className={styles.Text_Button}>Contact Us</button>
             </div>
           </Col>
-          <Col sm={6} className={styles.Services_Image}>
+          <Col sm={12} md={6} className={styles.Service_Img_Col}>
             <Image
               src={"/Services Page/unsplash_CCx6Fz_CmOI.png"}
               width={551}
@@ -71,6 +71,7 @@ const Services = () => {
               alt={"full"}
               style={{ maxWidth: "100%" }}
               priority
+              className={styles.ServiceImg}
             />
           </Col>
         </Row>
@@ -105,7 +106,7 @@ const Services = () => {
                   min: 1024,
                 },
                 items: 3,
-                partialVisibilityGutter: 40,
+                partialVisibilityGutter: 100,
               },
               mobile: {
                 breakpoint: {
@@ -113,7 +114,7 @@ const Services = () => {
                   min: 0,
                 },
                 items: 1,
-                partialVisibilityGutter: 30,
+                partialVisibilityGutter: 100,
               },
               tablet: {
                 breakpoint: {
@@ -121,7 +122,7 @@ const Services = () => {
                   min: 464,
                 },
                 items: 2,
-                partialVisibilityGutter: 30,
+                partialVisibilityGutter: 100,
               },
             }}
             rewind={false}

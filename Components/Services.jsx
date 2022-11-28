@@ -28,52 +28,72 @@ const Services = () => {
         <div className={`${largeScreen ? "container" : "container-fluid"}`}>
           <Row>
             <Col className={styles.ImageHolder}>
-              <Image
-                src={"/Our Services/1.png"}
-                width={247}
-                height={496}
-                alt="service1"
-              />
+              <div className={styles.ImageHolder__WithHover}>
+                <Image
+                  src={"/Our Services/1.png"}
+                  width={247}
+                  height={496}
+                  alt="service1"
+                  className={styles.ServiceImage}
+                />
+                <div>Branding</div>
+              </div>
               <span className={styles.About__Span}>Branding</span>
             </Col>
 
             <Col className={styles.ImageHolder}>
-              <Image
-                src={"/Our Services/2.png"}
-                width={247}
-                height={496}
-                alt="service1"
-              />
+              <div className={styles.ImageHolder__WithHover}>
+                <Image
+                  src={"/Our Services/2.png"}
+                  width={247}
+                  height={496}
+                  alt="service1"
+                  className={styles.ServiceImage}
+                />
+                <div>Branding</div>
+              </div>
               <span className={styles.About__Span}>Printing</span>
             </Col>
 
             <Col className={styles.ImageHolder}>
-              <Image
-                src={"/Our Services/3.png"}
-                width={247}
-                height={496}
-                alt="service1"
-              />
+              <div className={styles.ImageHolder__WithHover}>
+                <Image
+                  src={"/Our Services/3.png"}
+                  width={247}
+                  height={496}
+                  alt="service1"
+                  className={styles.ServiceImage}
+                />
+                <div>Branding</div>
+              </div>
               <span className={styles.About__Span}>Digital Marketing</span>
             </Col>
 
             <Col className={styles.ImageHolder}>
-              <Image
-                src={"/Our Services/4.png"}
-                width={247}
-                height={496}
-                alt="service1"
-              />
+              <div className={styles.ImageHolder__WithHover}>
+                <Image
+                  src={"/Our Services/4.png"}
+                  width={247}
+                  height={496}
+                  alt="service1"
+                  className={styles.ServiceImage}
+                />
+                <div>Branding</div>
+              </div>
               <span className={styles.About__Span}>Web & App</span>
             </Col>
 
             <Col className={styles.ImageHolder}>
-              <Image
-                src={"/Our Services/2.png"}
-                width={247}
-                height={496}
-                alt="service1"
-              />
+              <div className={styles.ImageHolder__WithHover}>
+                <Image
+                  src={"/Our Services/2.png"}
+                  width={247}
+                  height={496}
+                  alt="service1"
+                  className={styles.ServiceImage}
+                />
+                <div>Branding</div>
+              </div>
               <span className={styles.About__Span}>Web & App</span>
             </Col>
           </Row>

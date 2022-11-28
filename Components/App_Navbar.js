@@ -134,6 +134,7 @@ const App_Navbar = () => {
                 width={201}
                 height={90}
                 alt="logo"
+                className={styles.NavbarBrand}
               />
             </Navbar.Brand>
             <Navbar.Toggle
@@ -160,7 +161,7 @@ const App_Navbar = () => {
               <Offcanvas.Body>
                 <Nav
                   className="navbarLinks justify-content-end flex-grow-1 pe-3 gap-4"
-                  style={{ position: "relative", bottom: "-15px" }}
+                  style={{ position: "relative" }}
                 >
                   <Nav.Link
                     onClick={() => {

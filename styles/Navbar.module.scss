@@ -10,6 +10,12 @@
   transition: 0.2s ease-in-out;
   z-index: 111;
   top: 0;
+  height: 80px;
+}
+
+.NavbarBrand {
+  width: 150px;
+  height: auto;
 }
 
 @media (min-width: 990px) {

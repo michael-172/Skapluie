@@ -1,11 +1,18 @@
+import Link from "next/link";
 import React from "react";
 import { Container } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
+import styles from "../styles/Work.module.scss";
 
 const Work = () => {
   return (
-    <>
-      <h2 className="Work_Header">Our Work</h2>
+    <div className={styles.WorkSection}>
+      <Container className={styles.WorkContainer}>
+        <h2 className="Work_Header">Our Work</h2>
+        <Link href="/Work" className={styles.seeMoreLink}>
+          See More
+        </Link>
+      </Container>
       <Carousel
         additionalTransfrom={0}
         arrows={false}
@@ -199,7 +206,7 @@ const Work = () => {
           </div>
         </Container>
       </Carousel>
-    </>
+    </div>
   );
 };
 

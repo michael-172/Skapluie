@@ -1,6 +1,9 @@
 .Services {
   min-height: calc(100vh - 500px);
   margin-top: 150px;
+  @media (max-width: 768px) {
+    margin-top: 115px;
+  }
 }
 
 .Header {
@@ -8,6 +11,9 @@
   font-weight: 700;
   text-align: center;
   margin: 40px 0px 60px 0px;
+  @media (max-width: 768px) {
+    margin: 2px 0px 10px 0px;
+  }
 }
 .Services_Text {
   display: flex;
@@ -89,7 +95,10 @@
 
 .Services__Bottom {
   height: 400px;
-  margin-top: 50px;
+  margin: 0;
+  @media (max-width: 768px) {
+    margin-top: 40px;
+  }
 }
 
 .Servces_Slider_Header {
@@ -101,4 +110,25 @@
   left: calc(4% + 1px);
   top: 50%;
   transform: translateY(-50%);
+}
+
+.Service_Img_Col {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.ServiceImg {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.sliderImg {
+  width: 100%;
+  height: auto;
 }

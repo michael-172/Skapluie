@@ -54,11 +54,7 @@ const Landing = () => {
             <Image
               src={landingImg}
               alt={"landing image"}
-              style={{
-                width: "calc(100% - 100px)",
-                height: "auto",
-                maxWidth: "100%",
-              }}
+              className={styles.LandingImage}
             />
           </Col>
         </Row>
