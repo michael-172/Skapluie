@@ -20,7 +20,7 @@ const Clients = () => {
     window.innerWidth > 1400 ? setLargeScreen(true) : setLargeScreen(false);
   }, [handleResize]);
   return (
-    <div className={styles.Clients}>
+    <div className={styles.Clients} id="Clients">
       <h2 className={styles.Clients__Heading}>Our Clients</h2>
       {largeScreen ? (
         <Container className={styles.ClientsContainer}>

@@ -1,6 +1,6 @@
 .Services {
   min-height: calc(100vh - 500px);
-  margin-top: 10px;
+  margin-top: 150px;
 }
 
 .Header {
@@ -54,6 +54,8 @@
   object-fit: contain;
   width: 54px;
   cursor: pointer;
+  width: auto;
+  height: auto;
 }
 
 .Button_Container {

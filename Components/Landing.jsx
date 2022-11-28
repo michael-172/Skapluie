@@ -32,6 +32,13 @@ const Landing = () => {
             className={styles.Text}
             style={{ height: "100%" }}
           >
+            <Image
+              src={"/Landing_Text_Back.png"}
+              width={400}
+              height={400}
+              alt={"text-background"}
+              className={styles.TextBackground}
+            />
             <h2 className={styles.Text_Heading}>start your business growth</h2>
 
             <div className={styles.Button_Container}>
@@ -46,11 +53,9 @@ const Landing = () => {
           >
             <Image
               src={landingImg}
-              // width={500}
-              // height={700}
               alt={"landing image"}
               style={{
-                width: "400px",
+                width: "calc(100% - 100px)",
                 height: "auto",
                 maxWidth: "100%",
               }}

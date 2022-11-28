@@ -68,8 +68,9 @@ const Services = () => {
               src={"/Services Page/unsplash_CCx6Fz_CmOI.png"}
               width={551}
               height={558}
-              alt={"Huawei"}
+              alt={"full"}
               style={{ maxWidth: "100%" }}
+              priority
             />
           </Col>
         </Row>
