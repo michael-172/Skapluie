@@ -128,15 +128,17 @@ const App_Navbar = () => {
           } navbar-expand-lg`}
         >
           <Container>
-            <Navbar.Brand href="#">
-              <Image
-                src={"/Main_Logo.png"}
-                width={201}
-                height={90}
-                alt="logo"
-                className={styles.NavbarBrand}
-              />
-            </Navbar.Brand>
+            <Link href={"/"}>
+              <Navbar.Brand href="#">
+                <Image
+                  src={"/Main_Logo.png"}
+                  width={201}
+                  height={90}
+                  alt="logo"
+                  className={styles.NavbarBrand}
+                />
+              </Navbar.Brand>
+            </Link>
             <Navbar.Toggle
               aria-controls={`offcanvasNavbar-expand-${expand}`}
               className={styles.NavbarMobileMenu}

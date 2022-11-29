@@ -2,10 +2,29 @@ import Image from "next/image";
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
-import styles from "../styles/ServicesPage.module.scss";
+import styles from "../../styles/ServicesPage.module.scss";
 import "react-multi-carousel/lib/styles.css";
 
-const Services = () => {
+export const getStaticPaths = async () => {
+  const res = await fetch("http://localhost:3001/services");
+  const data = await res.json();
+  const paths = data.map((service) => {
+    return {
+      params: { id: service.id.toString() },
+    };
+  });
+  return { paths, fallback: false };
+};
+
+export const getStaticProps = async (context) => {
+  const id = context.params.id;
+  const res = await fetch("http://localhost:3001/services/" + id);
+  const data = await res.json();
+
+  return { props: { service: data } };
+};
+
+const Services = ({ service }) => {
   return (
     <div className={styles.Services}>
       <Container>
@@ -20,7 +39,7 @@ const Services = () => {
               className={styles.ServicesBackground}
             />
             <span className={styles.Breadcrumb}>Home {">"} Services</span>
-            <h2 className={styles.Service_Name}>PhotoSession</h2>
+            <h2 className={styles.Service_Name}>{service.service_name}</h2>
             <p className={styles.ServiceDesc}>
               We’re Your Creative & Professional PhotoSession Agency work with
               money clients on it. <br /> Photo taking services from

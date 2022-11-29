@@ -6,6 +6,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { useDispatch, useSelector } from "react-redux";
 import { getServices } from "../ReduxToolkit/ServicesSlice";
+import Link from "next/link";
 
 const Services = () => {
   const servicesFromApi = useSelector((state) => state.service.services);
@@ -35,22 +36,27 @@ const Services = () => {
         <div className={`${largeScreen ? "container" : "container-fluid"}`}>
           <Row>
             {servicesFromApi &&
-              servicesFromApi.map((service) => (
-                <Col className={styles.ImageHolder}>
-                  <div className={styles.ImageHolder__WithHover}>
-                    <Image
-                      src={service.image}
-                      width={247}
-                      height={496}
-                      alt={service.service_name}
-                      className={styles.ServiceImage}
-                    />
-                    <div>{service.service_name}</div>
-                  </div>
-                  <span className={styles.About__Span}>
-                    {service.service_name}
-                  </span>
-                </Col>
+              servicesFromApi.map((service, idx) => (
+                <Link
+                  href={`/Services/${service.id}`}
+                  className={styles.ImageHolder}
+                >
+                  <Col key={idx}>
+                    <div className={styles.ImageHolder__WithHover}>
+                      <Image
+                        src={service.image}
+                        width={247}
+                        height={496}
+                        alt={service.service_name}
+                        className={styles.ServiceImage}
+                      />
+                      <div>{service.service_name}</div>
+                    </div>
+                    <span className={styles.About__Span}>
+                      {service.service_name}
+                    </span>
+                  </Col>
+                </Link>
               ))}
           </Row>
         </div>
