@@ -1,4 +1,4 @@
-import Layout from "../Layouts/layout";
+import Layout from "./Layouts/Layout.js";
 import "../styles/globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/Navbar.scss";

@@ -1,7 +1,7 @@
 import React from "react";
 import { Provider } from "react-redux";
-import App_Navbar from "../Components/App_Navbar";
-import Footer from "../Components/Footer.jsx";
+import App_Navbar from "../../Components/App_Navbar";
+import Footer from "../../Components/Footer.jsx";
 
 const Layout = ({ children }) => {
   return (
