@@ -12,6 +12,13 @@ const Services = () => {
         <h2 className={styles.Header}>Services</h2>
         <Row className={styles.Services__Top}>
           <Col sm={12} md={6} className={styles.Services_Text}>
+            <Image
+              src={"/Clients/Clients-Background.png"}
+              width={400}
+              height={400}
+              alt={"services section background"}
+              className={styles.ServicesBackground}
+            />
             <span className={styles.Breadcrumb}>Home {">"} Services</span>
             <h2 className={styles.Service_Name}>PhotoSession</h2>
             <p className={styles.ServiceDesc}>

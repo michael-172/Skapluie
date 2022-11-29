@@ -8,7 +8,8 @@
 
 .Header {
   color: #666666;
-  font-weight: 700;
+  font-weight: 400;
+  font-size: 40px;
   text-align: center;
   margin: 40px 0px 60px 0px;
   @media (max-width: 768px) {
@@ -19,6 +20,14 @@
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  position: relative;
+}
+.ServicesBackground {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: auto;
+  height: 100%;
 }
 
 .Services_Image {
@@ -28,33 +37,38 @@
 
 .Breadcrumb {
   color: #adabab;
+  margin-bottom: 20px;
 }
 
 .Service_Name {
   color: #15addd;
   font-weight: 500;
-  font-size: 37px;
+  font-size: 40px;
   font-family: "Roboto";
-  margin-top: 8px;
-  letter-spacing: 4px;
+  margin-top: 8px px;
+  letter-spacing: 2px;
 }
 
 .ServiceDesc {
-  color: #666666d1;
-  letter-spacing: 1px;
+  color: rgba(102, 102, 102, 0.8196078431);
   word-spacing: 10px;
   width: 75%;
   font-weight: 500;
+  font-size: 17px;
+  z-index: 3;
 }
 
 .someClients {
   color: #15addd;
   margin: 10px 0px;
   font-weight: 500;
+  margin-bottom: 25px;
+  z-index: 3;
 }
 
 .Partners {
   width: fit-content;
+  z-index: 3;
 }
 .Partners div img {
   object-fit: contain;
@@ -62,6 +76,7 @@
   cursor: pointer;
   width: auto;
   height: auto;
+  z-index: 3;
 }
 
 .Button_Container {
@@ -72,13 +87,14 @@
   border-left: 3px solid #15addd;
   padding-left: 25px;
   margin-top: 40px;
+  z-index: 3;
 }
 
 .Text_Button {
   width: fit-content;
   border: 2px solid #15addd;
   color: #666666;
-  padding: 6px 35px;
+  padding: 10px 40px;
   border-radius: 26px;
   background: transparent;
   font-weight: 600;
@@ -122,10 +138,10 @@
 }
 
 .ServiceImg {
-  max-width: 100%;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+  // max-width: 100%;
+  // width: 100%;
+  // height: auto;
+  // object-fit: cover;
 }
 
 .sliderImg {
